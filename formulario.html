@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="receber-dados.html" method="POST">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" placeholder="Digite seu">
+        <label for="email">E-mail</label>
+        <input type="email" id="email" name="email">
+
+        <br>
+
+        <input type="radio" name="sexo" value="masculino">Masculino
+        <input type="radio" name="sexo" value="feminino">Feminino
+
+        <br>
+
+        <input type="checkbox" name="hobbies[]">Ouvir musica
+        <input type="checkbox" name="hobbies[]">Dormir
+        <input type="checkbox" name="hobbies[]">Jogar
+
+        <select id="estado">
+            <option value="">selecione</option>
+            <option value="Acre">Acre</option>
+            <option value="Brasilia">Brasilia</option>
+            <option value="Maranhão">Maranhão</option>
+        </select>
+
+        <br>
+
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <label for="nome">Nome</label>
+            <input type="text" id="nome">
+            <label for="email">E-mail</label>
+            <input type="text" id="email">
+            <br>
+
+            <label for="idade">Idade:</label>
+            <input type="number" id="idade" name="idade" min="1" max="120" step="1" value="14">
+
+            <br>
+
+            <label for="point">Pontuação</label>
+            <input type="range" id="points" name="points">
+
+            <br>
+
+            <input type="text" placeholder="Digite seu nome">
+            <input type="text" placeholder="Digite seu email" required>
+            <input type="text" placeholder="Seu sobrenome" autofocus>
+            <input type="text" placeholder="Não editavel" disabled>
+
+            <br>
+
+            <label for="data">Data:</label>
+            <input type="date" id="data" name="data">
+        </fieldset>
+    </form>
+</body>
+
+</html>

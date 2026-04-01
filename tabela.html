@@ -1,0 +1,85 @@
+<!--
+<table></table> define a tabela
+<caption> legenda da tabela
+<tr></tr> adiciona linha na tabela
+<th></th> adiciona uma celula de cabecalho texto negrito
+<td></td> adiciona uma celula de dado comum alinha a esquerda
+
+<thead></thead> cabecalho da tabela
+<tbody></tbody> corpo da tabela
+<tfoot></tfoot> rodape da tabela
+-->
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*estilo da tabela*/
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 40px;
+
+        }
+        h1 {
+            font: 28px;
+        }
+        table {
+            border-collapse: collapse;
+            width: 70%;
+            margin-top: 10px;
+        }
+        caption {
+            font-size: 16px;
+            font-weight: bold;
+            margin: 8px;
+        }
+        th,td {
+            border: 1px solid #000;
+            padding: 8px 12px;
+            text-align: left;
+        }
+        th {
+            background-color: #f1f1f1;
+        }
+        tfoot td {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>tabela</h1>
+<table>
+    <caption>Cadastro de clientes</caption>
+    <thead>
+        <tr>
+            <th>Nome:</th>
+            <th>Email:</th>
+            <th>Telefone:</th>
+            <th>Cargo:</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Lucas</td>
+            <td>lucas@email.com</td>
+            <td>11 96741-1553</td>
+            <td>Desesnvolvedor Web</td>
+        </tr>
+        <tr>
+            <td>jorge</td>
+            <td>jorge@email.com</td>
+            <td>11 91234-1553</td>
+            <td>Desesnvolvedor Web</td>
+        </tr>
+    </tbody>
+    <tfoot>
+        <tr>
+            <td colspan="4">Total 2</td>
+        </tr>
+    </tfoot>
+</table>
+</body>
+</html>
+
